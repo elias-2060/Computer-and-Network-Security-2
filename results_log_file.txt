@@ -1,0 +1,16 @@
+...............F..............................F......
+======================================================================
+FAIL: test_client_ack_rsa_encrypted_header (test.task2.test_client_handshake.ClientHandshakeTest)
+----------------------------------------------------------------------
+AssertionError: 'Content-Encoding' not found in Headers[(b'Encryption', b'keyid="cns_flaskr", nonce="hTWvHHjQk0BmhmqKE4bd"'), (b'content-length', b'384')] : Check if the client ack was encrypted with RSA. - No Content-Encoding header.
+
+======================================================================
+FAIL: test_encrypt_long_nonce (test.task2.test_rsa.RSATest)
+----------------------------------------------------------------------
+AssertionError: b"?q\xb6\xd5\xd6a\x03a\xd3\x84\xf5\xe92\x9[313 chars]x05J" != b'\x02\x06\x8a\x8a\xd0\xe1\xb8\xca\x1b\xf0[341 chars]\x91'
+Testing encryption with a too long nonce.
+
+----------------------------------------------------------------------
+
+FAILED (failures=2)
+
